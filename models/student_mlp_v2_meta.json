@@ -1,0 +1,62 @@
+{
+  "architecture": "DistillationMLP_v2",
+  "input_dim": 384,
+  "hidden_dims": [
+    512,
+    256
+  ],
+  "num_classes": 27,
+  "dropout": 0.3,
+  "activation": "GELU",
+  "categories": [
+    "Adult",
+    "Arts & Entertainment",
+    "Autos & Vehicles",
+    "Beauty & Fitness",
+    "Books & Literature",
+    "Business & Industrial",
+    "Computers & Electronics",
+    "Finance",
+    "Food & Drink",
+    "Games",
+    "Health",
+    "Hobbies & Leisure",
+    "Home & Garden",
+    "Internet & Telecom",
+    "Jobs & Education",
+    "Law & Government",
+    "News",
+    "Online Communities",
+    "People & Society",
+    "Pets & Animals",
+    "Real Estate",
+    "Reference",
+    "Science",
+    "Sensitive Subjects",
+    "Shopping",
+    "Sports",
+    "Travel"
+  ],
+  "embedding_model": "intfloat/e5-small-v2",
+  "text_format": "domain | title | sonnet_keywords",
+  "best_epoch": 13,
+  "best_val_top1": 0.8487473130226135,
+  "best_val_top3": 0.9830910403134344,
+  "training_config": {
+    "epochs_run": 25,
+    "lr": 0.002,
+    "weight_decay": 0.0001,
+    "alpha": 0.7,
+    "temperature": 3.0,
+    "batch_size": 1024,
+    "teacher_domains": 32919,
+    "total_train_domains": 77588,
+    "class_weighted": true
+  },
+  "v1_comparison": {
+    "v1_top1": 0.451,
+    "v1_top3": 0.68,
+    "v1_teacher_domains": 6497,
+    "improvement_top1_relative": 88.19230887419369
+  }
+}

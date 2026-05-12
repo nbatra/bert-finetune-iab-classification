@@ -1,0 +1,50 @@
+{
+  "model": "TF-IDF + LinearSVC (Calibrated)",
+  "val_top1": 0.9160040774719673,
+  "val_top3": 0.9926605504587156,
+  "val_macro_f1": 0.8795091251654207,
+  "test_top1": 0.9171942005309373,
+  "test_top3": 0.9919338370430876,
+  "test_macro_f1": 0.9023922860563593,
+  "tfidf_config": {
+    "max_features": 30000,
+    "ngram_range": [
+      1,
+      2
+    ],
+    "sublinear_tf": true,
+    "min_df": 3,
+    "max_df": 0.8
+  },
+  "vocabulary_size": 30000,
+  "inference_ms_per_domain": 0.0246121883392334,
+  "categories": [
+    "Adult",
+    "Arts & Entertainment",
+    "Autos & Vehicles",
+    "Beauty & Fitness",
+    "Books & Literature",
+    "Business & Industrial",
+    "Computers & Electronics",
+    "Finance",
+    "Food & Drink",
+    "Games",
+    "Health",
+    "Hobbies & Leisure",
+    "Home & Garden",
+    "Internet & Telecom",
+    "Jobs & Education",
+    "Law & Government",
+    "News",
+    "Online Communities",
+    "People & Society",
+    "Pets & Animals",
+    "Real Estate",
+    "Reference",
+    "Science",
+    "Sensitive Subjects",
+    "Shopping",
+    "Sports",
+    "Travel"
+  ]
+}
