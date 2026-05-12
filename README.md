@@ -198,8 +198,8 @@ models/
 
 ```bash
 # Clone the repository
-git clone https://github.com/nbatra/iab-domain-classification.git
-cd iab-domain-classification
+git clone https://github.com/nbatra/bert-classification-iab.git
+cd bert-classification-iab
 
 # Create environment and install dependencies
 uv venv --python 3.13 .venv
